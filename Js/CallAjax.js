@@ -244,7 +244,6 @@ function llamada2(){
     var ubicacion = document.getElementById("cmbUbiModal");
     var estado = document.getElementById("cmbEstadoModal");
     
-alert(id);
     const Create = {
         imdbID: id.value,
         Title: titulo.value,
@@ -314,7 +313,6 @@ function llamada4(){
     var ubicacion = document.getElementById("cmbUbiModalU");
     var estado = document.getElementById("cmbEstadoModalU");
     
-alert(id);
     const Create = {
         imdbID: id.value,
         Title: titulo.value,
@@ -340,9 +338,9 @@ alert(id);
         throw Error(data.status);
        }
        return data.json();
-      }).then(Create => {
-      alert(Create);
-      llamadaDemo();
+      }).then(data => {
+        alert("Codigo http: "+data.codError +" Mensaje: "+ data.msgRespuesta);
+        llamadaDemo();
      
       }).catch(e => {
       console.log(e);
