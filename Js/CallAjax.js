@@ -171,7 +171,7 @@ var url="";
                     buttonActualiza.type="button";
                     buttonActualiza.className="btn btn-success";
                     buttonActualiza.textContent="Actualizar";
-                    buttonActualiza.setAttribute('data-bs-toggle', 'model');
+                    buttonActualiza.setAttribute('data-bs-toggle', 'modal');
                     buttonActualiza.setAttribute('data-bs-target','#MdlForm2');
                     buttonActualiza.addEventListener('click',llamada5,false);
                     buttonActualiza.id=data[index].imdbID;
