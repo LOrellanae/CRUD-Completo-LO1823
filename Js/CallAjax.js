@@ -132,7 +132,7 @@ function llamada1() {
         url = "https://movie.azurewebsites.net/api/cartelera?title=&ubication=";
     }
 
-    alert(url)
+    //alert(url)
     fetch(url)
         .then(response => response.json())
         .then(data => {
